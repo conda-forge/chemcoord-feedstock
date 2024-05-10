@@ -1,5 +1,5 @@
 {% set name = "chemcoord" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,6 @@ requirements:
     - pandas >=1.0
     - pymatgen
     - python >=3.7
-    - scipy
     - six
     - sortedcontainers
     - sympy
