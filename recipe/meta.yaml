@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemcoord-{{ version }}.tar.gz
-  sha256: dbbbfbe0734e5b9f851b86bb041ecf535a83c428ad67bf71381ac70ee1661878
+  sha256: 86f7f6bfd0f63c846d74a585c646242eb492d5d8f507a5837df4aebe8aec4289
 
 build:
   noarch: python
