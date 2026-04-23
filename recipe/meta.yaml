@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemcoord-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemcoord-{{ version }}.tar.gz
   sha256: 86f7f6bfd0f63c846d74a585c646242eb492d5d8f507a5837df4aebe8aec4289
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - numba >=0.35
     - numpy >=1.0
     - pandas >=1.0
     - pymatgen
-    - python >=3.7
+    - python >={{ python_min }}
     - six
     - sortedcontainers
     - sympy
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mcocdawc/chemcoord
