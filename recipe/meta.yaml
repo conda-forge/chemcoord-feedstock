@@ -1,13 +1,13 @@
 {% set name = "chemcoord" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemcoord-{{ version }}.tar.gz
-  sha256: 86f7f6bfd0f63c846d74a585c646242eb492d5d8f507a5837df4aebe8aec4289
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemcoord-{{ version }}.tar.gz
+  sha256: f725a3da458b5e2e98b3f78890f1b5b111d1c5ce15e40224d9fa4dc989953a4d
 
 build:
   noarch: python
